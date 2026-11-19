@@ -1,0 +1,7 @@
+# Nunca versione planilhas ou dados reais
+*.xlsx
+*.xls
+*.csv
+!tests/fixtures/*.csv
+node_modules/
+.DS_Store

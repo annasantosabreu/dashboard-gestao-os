@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gestão Operacional de OS</title>
+  <script>
+    // Aplica o tema antes da renderização para evitar "flash" de cor.
+    (function () { try { var p = JSON.parse(localStorage.getItem('os.theme') || '"auto"'); var d = p === 'dark' || (p === 'auto' && matchMedia('(prefers-color-scheme: dark)').matches); document.documentElement.dataset.theme = d ? 'dark' : 'light'; var s = JSON.parse(localStorage.getItem('os.density') || '"comfortable"'); document.documentElement.dataset.density = s; } catch (e) {} })();
+  </script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div id="app" class="app"></div>
+  <noscript>Este sistema precisa de JavaScript habilitado.</noscript>
+  <script src="vendor/xlsx.full.min.js"></script>
+  <script src="vendor/echarts.min.js"></script>
+  <script src="js/core/normalize.js"></script>
+  <script src="js/core/validate.js"></script>
+  <script src="js/core/format.js"></script>
+  <script src="js/core/metrics.js"></script>
+  <script src="js/core/filters.js"></script>
+  <script src="js/core/storage.js"></script>
+  <script src="js/ui/components.js"></script>
+  <script src="js/ui/charts.js"></script>
+  <script src="js/ui/exporter.js"></script>
+  <script src="js/ui/importer.js"></script>
+  <script src="js/ui/pages.js"></script>
+  <script src="js/ui/app.js"></script>
+</body>
+</html>
